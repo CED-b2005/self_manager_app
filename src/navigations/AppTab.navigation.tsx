@@ -3,6 +3,7 @@ import { View, Text } from "react-native";
 import { AppTabPraramList } from "../types";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
+import { TaskManagerScreen } from "../screens";
 
 const Tab = createBottomTabNavigator<AppTabPraramList>();
 
@@ -17,7 +18,7 @@ export const AppNaviagtor = () => {
                 }}>
                 <Tab.Screen
                     name="TaskManager"
-                    component={() => (<View><Text>Task Manager Screen</Text></View>)} />
+                    component={TaskManagerScreen} />
 
                 <Tab.Screen
                     name="MoneyManager"
