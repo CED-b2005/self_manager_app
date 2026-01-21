@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text } from "react-native";
-import { AppTabPraramList } from "../interfaces";
+import { AppTabPraramList } from "../types";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 
