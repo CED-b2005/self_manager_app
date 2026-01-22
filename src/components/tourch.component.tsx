@@ -1,8 +1,9 @@
 import { TouchableOpacity, Text, StyleSheet } from "react-native"
 
 type TourchStyles = {
-    width?: any 
+    width?: any
     height?: any
+    flex?: any
     backgroundColor?: string
     borderWidth?: any
     borderRadius?: any
@@ -22,9 +23,10 @@ export const Tourch = ({ onPress, title, tourchStyles }: TouchProps) => {
 
     const styles = StyleSheet.create({
         tourchStyle: {
-            width: tourchStyles?.width ?? "90%",
+            width: tourchStyles?.width ?? " 100%",
             height: tourchStyles?.height ?? 50,
             display: 'flex',
+            flex: tourchStyles?.flex ?? 1,
             justifyContent: 'center',
             alignItems: 'center',
             backgroundColor: tourchStyles?.backgroundColor ?? 'lightblue',
